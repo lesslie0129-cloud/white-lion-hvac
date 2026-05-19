@@ -156,6 +156,20 @@
       padding: 22px;
       font-size: 0.95rem;
     }
+    .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
     @media (max-width: 800px) {
       .two-col { grid-template-columns: 1fr; }
       .hero h1 { font-size: 2.2rem; }
@@ -181,7 +195,6 @@
     <a class="btn btn-primary" href="tel:7087593081">Call Now: 708-759-3081</a>
     <a class="btn btn-secondary" href="#contact">Free Estimate</a>
   </section>
-
   <section class="section gray" id="about">
     <div class="two-col">
       <div>
@@ -273,6 +286,19 @@
       <a class="btn btn-primary" href="tel:7087593081">Call for Service</a>
     </div>
   </section>
+  <section id="gallery">
+  <h2>Recent HVAC Installations</h2>
+
+  <div class="section gray" id="gallery>
+    <img src="images/rooftop-unit.jpg" alt="Rooftop HVAC Unit">
+
+    <img src="images/ameristar-install.jpg" alt="Ameristar Installation">
+
+    <img src="images/rheem-furnace.jpg" alt="Rheem Furnace Installation">
+
+    <img src="images/water-heater.jpg" alt="Water Heater Installation">
+  </div>
+</section>
 
   <footer class="footer">
     © 2026 White Lion HVAC. All rights reserved.
